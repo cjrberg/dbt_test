@@ -1,0 +1,16 @@
+
+postgres-db:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: 127.0.0.1:54
+      user: postgres
+      pass: 302Halmstad37
+      port: 5432
+      dbname: postgres
+      schema: [dbt schema]
+      threads: 2
+      keepalives_idle: 0 # default 0, indicating the system default
+
+
